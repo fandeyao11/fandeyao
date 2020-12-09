@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <!-- 创建封装容器 -->
+    <div class="container" id="container">
+
+        <!-- 注册页面 -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>sign up</h1>
+                <!-- 公共组件 -->            
+                <input type="text" name="userName" id="userName" placeholder="userName...">
+                <input type="email" name="email" id="email" placeholder="Email...">
+                <input type="password" name="password" id="password" placeholder="Password...">
+                <button>sign up</button>
+            </form>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>sign in</h1>
+                <!-- 公共组件 -->
+                <div class="social-container">
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email..." >
+                <input type="password" name="password" id="password" placeholder="Password...">
+                <a href="#" class="forget">forget your password</a>
+                <button>
+                    <a href="c3.html">进入</a>
+                </button>
+            </form>
+        </div>
+
+        <!-- 覆盖容器 -->
+        <div class="overlay-container">
+            <div class="overlay">
+
+                <!-- 覆盖左边 -->
+                <div class="overlay-penal overlay-left-container">
+                    <h1>welcome back!</h1>
+                    <p>
+                        To keep connected with us please login with your personal info
+                    </p>
+                    <button class="ghost" id="signIn">sign in</button>
+                </div>
+
+                <!-- 覆盖右边 -->
+                <div class="overlay-penal overlay-right-container">
+                    <h1>请注册</h1>
+                    <p>
+                        Enter your personal details and start journey with us
+                    </p>
+                    <button class="ghost" id="signUp">sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
